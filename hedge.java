@@ -6,9 +6,9 @@ public class hedge{
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("What was your initial amount wagered?");
+        System.out.println("Initial amount wagered: ");
         double initialBet = scan.nextDouble();
-        System.out.println("What was the odds on the parlay?");
+        System.out.println("Odds on the wager: ");
         double initialOdds = scan.nextDouble();
 
         double initialPayout;
@@ -20,7 +20,7 @@ public class hedge{
         }
 
 
-        System.out.println("What was the odds on the final game?");
+        System.out.println("Odds on the final wager: ");
         double hedgeOdds = scan.nextDouble();
 
        double hedgeDecimalOdds = americanToDecimal(hedgeOdds);
